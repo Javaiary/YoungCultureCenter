@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1 문의 작성하기</title>
+    <link rel="stylesheet" href="YCC_Inquiry.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+           <p> 
+            <h1 id="main">1:1 문의</h1>
+              * 는 필수항목입니다.</p>
+
+              <p>
+                문의 유형: *
+                    <select name="inq_type_main" class="inq_type"  required>
+                        <option value="">문의 유형</option>
+                        <option value="Payment">결제</option>
+                        <option value="Class">교육강좌</option>
+                        <option value="Etc">기타</option>
+                    </select>
+                  <select name="inq_type_sub" class="inq_type"  required>
+                      <option value="">분류 선택</option>
+                      <option value="Refund">결제 취소, 환불</option>
+                      <option value="Application Inquiry">Application Inquiry</option>
+                      <option value="Ticket Inquiry">Ticket Inquiry</option>
+                  </select>
+              
+          </p>
+
+            <p>제목: *<input type="text" name="name" required></p>
+
+            <p>
+                내용: *<textarea name="message" id="message" placeholder="내용을 입력하세요. 
+                " cols="100" rows="8"></textarea>
+        
+            </p>
+            </p>
+          <button id="attach" >+</button>
+          <intput type="file"></intput>
+
+            
+<input type="submit" value="Send">
+
+
+    </div>
+</body>
+</html>

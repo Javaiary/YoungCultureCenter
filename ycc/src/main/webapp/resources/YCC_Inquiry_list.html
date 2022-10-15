@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+           <p> 
+            <h1 id="main">Contact Us</h1>
+            Please fill all the texts in the fields* </p>
+
+            <p>Name: *<input type="text" name="name" placeholder="Full Name" required></p>
+            
+            <p>
+                Email: *<input type="email" name="email" id="email" placeholder="abc@gmail.com" required> 
+            </p>
+
+            <p>
+                Message: *<textarea name="message" id="message" placeholder="Your Message To Us 
+                " cols="100" rows="8"></textarea>
+        
+            </p>
+
+            <p>
+                <p>Subject: *
+                    <select name="card_type" id="card_type"  required>
+                        <option value="">Inquiry Type</option>
+                        <option value="Job Inquiry">Job Inquiry</option>
+                        <option value="Application Inquiry">Application Inquiry</option>
+                        <option value="Ticket Inquiry">Ticket Inquiry</option>
+                    </select>
+                </p>
+            </p>
+
+            <p class="contact">
+                <input class="input" id="ckb1" type="checkbox" name="copy-mail">
+                <label class="label" for="ckb1">send copy to my-email
+            </label>
+
+            </p>
+
+            
+<input type="submit" value="Send">
+
+
+    </div>
+</body>
+</html>
