@@ -21,15 +21,16 @@ body{
   border-radius:4px ;
 }
 #main{
-  width: 1000px;
+  width: 100%;
   background-color: #0e82ff;
   padding: 15px 0 20px  0;
   font-size: 30pt;
   color: white;
   border-radius:4px ;
+  text-indent: 20px;
   text-align: left;
   position: relative;
-  top: 
+
 }
 
 hr{
@@ -78,7 +79,9 @@ border:1px solid rgb(255, 255, 255);
 
 .inq_type{
   width: 300px;
-  display : inline;
+  height: 50px;
+  display : inline;]
+  font-size: 12pt;
 
 }
 
