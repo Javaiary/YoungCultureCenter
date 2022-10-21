@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -171,9 +171,9 @@
            <p> 
             <h2 id="main">1:1 문의</h2>
             <br/>
-            <hr>
+            <hr/>
               * 는 필수항목입니다.</p>
-
+			<hr/>
               <p>
                 문의 유형: *
                     <select name="inq_type_main" class="inq_type"  required>
@@ -190,18 +190,21 @@
                   </select>
               
           </p>
+		  <hr color="blue" size="5" />
 
-            <p>제목: *<input type="title" name="name" required></p>
-
+            <p>문의내용: *<input type="title" name="name" required></p>
+		  	<hr color="blue" size="5"/>
             <p>
-                내용: *<textarea name="message" id="message" placeholder="내용을 입력하세요. 
+            <textarea name="message" id="message" placeholder="내용을 입력하세요. 
                 " cols="100" rows="20"></textarea>
         
             </p>
             </p>
           <div class="filebox">
+			<a>파일 첨부:</a>
             <label for="attatch">+</label>
             <input type="file" id="attatch"> 
+				
           </div>
           <br/><br/><br/>
           <input type="submit" value="완료">

@@ -9,7 +9,7 @@ body{
 
 }
 .container{
-  padding: 5px 20px 15px 20px;
+  padding: 20px 20px 10px 20px;
   border: 1px solid rgba(211, 211, 211, 0.775);
   border-radius:4px ;
 }
@@ -32,9 +32,8 @@ body{
   position: relative;
 
 }
-
 hr{
-  color: grey;
+  display: true;
 }
 
 
@@ -101,6 +100,11 @@ border:1px solid rgb(255, 255, 255);
 
 }
 
+.filebox a{
+  position:relative;
+  top: 450px;
+  
+}
 .filebox label {
   color: #0e82ff;
   background-color: white;
@@ -111,7 +115,8 @@ border:1px solid rgb(255, 255, 255);
   padding : 15px 60px;
   margin: 20px 10px 30px ;
   position: relative;
-  top: 60px; 
+  top: 60px;
+  left: 128px; 
 }
 
 .filebox input[type="file"] {  /* 파일 필드 숨기기 */
