@@ -36,15 +36,31 @@ body{
 hr{
   color: grey;
 }
-input[type="title"],
-input[type="message"],
-select,
-textarea{
+
+
+select {
   width: 100%;
   padding:12px ;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px;
+  position: relative;
+  top:2px;
+  left: 23px;
+  
+}
+input[type="title"],
+input[type="message"], textarea
+{
+  width: 85%;
+  padding:12px ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px; 
+  display: flex;
+  float:right;
+  position: relative;
+  top: -5px;
 }
 
 input[type="submit"]
@@ -80,7 +96,7 @@ border:1px solid rgb(255, 255, 255);
 .inq_type{
   width: 300px;
   height: 50px;
-  display : inline;]
+  display : inline;
   font-size: 12pt;
 
 }
@@ -107,3 +123,4 @@ border:1px solid rgb(255, 255, 255);
   overflow: hidden;
   clip:rect(0,0,0,0);
   border: 0;
+}
