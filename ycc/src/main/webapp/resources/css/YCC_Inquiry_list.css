@@ -1,72 +1,65 @@
-body{
-  background-color: #F5F1E9;
+.container *{
+  box-sizing: border-box;
 }
-#calendar{
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  font-family: 'Lato', sans-serif;
+
+.container{
+  padding: 5px 20px 15px 20px;
+  border: 1px solid rgba(211, 211, 211, 0.775);
+  border-radius:4px ;
 }
-#calendar_weekdays div{
-  display:inline-block;
-  vertical-align:top;
-}
-#calendar_content, #calendar_weekdays, #calendar_header{
-  position: relative;
-  width: 320px;
-  overflow: hidden;
-  float: left;
-  z-index: 10;
-}
-#calendar_weekdays div, #calendar_content div{
-  width:40px;
-  height: 40px;
-  overflow: hidden;
-  text-align: center;
-  background-color: #FFFFFF;
-  color: #787878;
-}
-#calendar_content{
-  -webkit-border-radius: 0px 0px 12px 12px;
-  -moz-border-radius: 0px 0px 12px 12px; 
-  border-radius: 0px 0px 12px 12px;
-}
-#calendar_content div{
-  float: left;
-}
-#calendar_content div:hover{
-  background-color: #F8F8F8;
-}
-#calendar_content div.blank{
-  background-color: #E8E8E8;
-}
-#calendar_header, #calendar_content div.today{
-  zoom: 1;
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-#calendar_content div.today{
-  color: #FFFFFF;
-}
-#calendar_header{
+
+
+#main{
   width: 100%;
-  height: 37px;
-  text-align: center;
-  background-color: #FF6860;
-  padding: 18px 0;
-  -webkit-border-radius: 12px 12px 0px 0px;
-  -moz-border-radius: 12px 12px 0px 0px; 
-  border-radius: 12px 12px 0px 0px;
+  background-color: #0e82ff;
+  padding: 15px 0 20px  0;
+  font-size: 30pt;
+  color: white;
+  border-radius:4px ;
+  text-indent: 20px;
+  text-align: left;
+  position: relative;
+
 }
-#calendar_header h1{
-  font-size: 1.5em;
-  color: #FFFFFF;
-  float:left;
-  width:70%;
+.searchBox{
+  background-color: rgb(212, 229, 235);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  
 }
-i[class^=icon-chevron]{
-  color: #FFFFFF;
-  float: left;
-  width:15%;
-  border-radius: 50%;
+.searchBox *{
+height: 40px;
+position: relative;
+left: 20px;
+margin-top: 5px;
+font-size: 17px;
+margin-right: 2px;
+}
+.period {
+  width: 80px;
+  background: linear-gradient( lightgray,rgb(237, 237, 237), gray );
+  border: 1px solid black;
+  font-size: 10pt;
+
+}
+.search{
+  width: 70px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #4daea1;
+  position: relative;
+  top:5px
+
+
+}
+
+.select {
+  width: 120px;
+  background-size: 20px;
+  padding: 5px 30px 5px 10px;
+  border-radius: 4px;
+  outline: 0 none;
+  margin-left: 20px;
+  
 }
