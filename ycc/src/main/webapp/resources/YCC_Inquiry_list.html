@@ -11,6 +11,31 @@
     <script type="text/javascript" src="/js/default.js"></script><!-- 메뉴 -->
     <script type="text/javascript" src="/js/main.js"></script><!-- 메인이미지 -->
     <script type="text/javascript" src="/js/common.js"></script><!-- 공지사항 -->
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	<!-- bootstrap css link -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css.map">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css.map">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css.map">
+
+
+
   
     <script type="text/javascript">
       function printElem(options) {
@@ -170,24 +195,81 @@
       <p> 
         <h2 id="main">나의 문의 내역</h2>
         <br/>
-	<div class="searchBox">
-      <div class="searchByPeriod">
-      <label>기간별 조회</label>
-      <br/>
-      <button type="submit" class="period">1개월</button>
-      <button type="submit" class="period" >3개월</button>
 
-      <input type='date' id="r_date" value="start_date" >~<input type='date' id="r_date" value="end_date" >
-        <button type="submit" class="search">조회</button>
+	<div class="searchBox">
+		<label>기간별 조회</label>
+      <div class="searchByPeriod">
+      <br/>
+      <button type="submit" class="periodBtn">1개월</button>
+      <button type="submit" class="periodBtn" >3개월</button>
+
+      <input type='date' id="r_date" value="startDate" > <label>~</label> <input type='date' id="r_date" value="endDate" >
+        <button type="submit" class="searchBtn">조회</button>
       </div>
+
       <div class="searchByTerm"></div>
       <select class="select">
         <option value="title">제목</option>
         <option value="contents">내용</option>
       </select>
       <input type="text" id="search-bar" >
-      <button type="submit"  class="search">검색</button>
+      <button type="submit"  class="searchBtn">검색</button>
+
+
 	</div>
+
+
+	<!-- 게시판 테이블 -->
+	<table class="table">
+		<thead>
+		  <tr>
+			<th scope="col">분류</th>
+			<th scope="col">제목</th>
+			<th scope="col">작성일</th>
+			<th scope="col">상태</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>교육강좌</td>
+			<td>수강 관련 문의</td>
+			<td>2022.02.03</td>
+			<td>답변대기</td>
+		  </tr>
+		  <tr>
+			<td>결제</td>
+			<td>결제 관련 문의</td>
+			<td>2022.02.03</td>
+			<td>답변대기</td>
+		  </tr>
+		  <tr>
+			<td>결제</td>
+			<td>영수증 문의</td>
+			<td>2022.01.01</td>
+			<td>답변완료</td>
+		  </tr>
+		  <tr>
+			<td>교육강좌</td>
+			<td>수강신청 변경 문의</td>
+			<td>2022.01.01</td>
+			<td>답변완료</td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		</tbody>
+	  </table>
+
+	  <button class="writeBtn">글쓰기</button>
 
 
 
