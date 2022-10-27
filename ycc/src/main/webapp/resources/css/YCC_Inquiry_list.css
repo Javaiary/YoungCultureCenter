@@ -1,13 +1,3 @@
-.container *{
-  box-sizing: border-box;
-}
-
-.container{
-  padding: 5px 20px 15px 20px;
-  border: 1px solid rgba(211, 211, 211, 0.775);
-  border-radius:4px ;
-}
-
 
 #main{
   width: 100%;
@@ -22,19 +12,6 @@
 
 }
 
-.searchBox *{
-height: 40px;
-position: relative;
-left: 20px;
-margin-top: 5px;
-font-size: 17px;
-margin-right: 2px;
-}
 
 
-.table td{
-
-  text-align: center;
-
-}
 
